@@ -1,0 +1,21 @@
+.display-container {
+  background-color: rgb(38, 38, 38);
+  font-size: large;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 2px;
+  min-width: 435px;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.previous-equation {
+  font-size: x-large;
+  color: rgba(14, 171, 14, 0.681);
+}
+
+.current-equation {
+  font-size: xx-large;
+  color: rgb(14, 171, 14);
+}

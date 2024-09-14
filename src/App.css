@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap");
+
+* {
+  font-family: "Handjet", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  background: #000000;
+  background: radial-gradient(circle, #0f9b0f, #000000);
+}
+
+.calculator-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,31 @@
+.pad-container {
+  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.two-span {
+  grid-column: span 2 / span 2;
+}
+
+.pad-container > button {
+  border-radius: 7px;
+  font-size: x-large;
+  border: none;
+  background-color: #333333;
+  color: white;
+  margin: 5px;
+  transition: all ease-in-out 100ms;
+}
+
+button:hover,
+button:focus {
+  background-color: #4f4f4f;
+}
+
+button:active {
+  background-color: white;
+  color: #333333;
+}
