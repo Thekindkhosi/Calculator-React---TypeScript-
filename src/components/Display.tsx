@@ -1,11 +1,16 @@
 import "./Display.css";
 
-const Display = () => {
+interface Props {
+  currentEquation: string;
+  previousEquation: string;
+}
+
+const Display = ({ currentEquation, previousEquation }: Props) => {
   return (
     <>
       <div className="display-container">
-        <p className="previous-equation">123,456 x 2</p>
-        <p className="current-equation">{123456 * 2}</p>
+        <p className="previous-equation">{previousEquation}</p>
+        <p className="current-equation">{currentEquation}</p>
       </div>
     </>
   );
