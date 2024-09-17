@@ -6,8 +6,13 @@ import { useState } from "react";
 const Calculator = () => {
   const [currentEquation, setCurrentEquation] = useState("0");
   const [previousEquation, setPreviousEquation] = useState("");
+  const [error, setError] = useState("");
 
   function onDigit(value: string) {
+    if (currentEquation.length >= 5) {
+      setError("Chill mate!!");
+      return;
+    }
     if (currentEquation[0] === "0" && currentEquation.length === 1)
       setCurrentEquation(value);
     else setCurrentEquation(currentEquation + value);
@@ -59,6 +64,7 @@ const Calculator = () => {
 
   function onClear() {
     if (currentEquation !== "0") {
+      setError("");
       setCurrentEquation("0");
       return;
     } else {
@@ -76,6 +82,7 @@ const Calculator = () => {
       <Display
         currentEquation={currentEquation}
         previousEquation={previousEquation}
+        error={error}
       />
       <Pad
         onClear={onClear}
